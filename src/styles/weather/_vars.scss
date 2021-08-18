@@ -1,0 +1,16 @@
+:root {
+  --app-bg: rgb(255, 255, 255);
+  --app-btn-bg: rgb(240, 239, 245);
+  --app-btn-color: rgba(0, 0, 0, 0.3);
+  --app-aside: rgb(240, 239, 245);
+
+  --weather-color: rgb(0, 0, 0);
+
+  --weather-info-color: rgba(0, 0, 0, 0.3);
+  --weather-search-input-border-bg: var(--app-aside);
+  --weather-search-input-border-color: rgba(0, 0, 0, 0.1);
+  --weather-search-input-border-color-focus: #4899e3;
+  --weather-search-input-shadow-focus: rgba(72, 153, 227, 0.3);
+  --weather-search-input-btn-clear-color: rgba(0, 0, 0, 0.2);
+  --weather-search-suggestion-bg-hover: rgba(126,183,235,0.2);
+}

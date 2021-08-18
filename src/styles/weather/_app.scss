@@ -1,0 +1,67 @@
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--app-bg);
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px;
+  }
+
+  &__btn-menu {
+    position: relative;
+    border: 0;
+    padding: 12px;
+    background: var(--app-btn-bg);
+    color: var(--app-btn-color);
+    font-size: 14px;
+    border-radius: 50%;
+    outline: none;
+
+    &--dotted {
+      &::before {
+        content: '\00B7\00B7\00B7';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+
+  &__aside {
+    position: fixed;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--app-aside);
+    overflow: hidden;
+    opacity: 0.5;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.2s ease-in-out;
+
+    &--show {
+      top: 25px;
+      opacity: 1;
+    }
+  }
+}
