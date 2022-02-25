@@ -1,5 +1,4 @@
 "use strict";
-/* eslint-disable functional/functional-parameters */
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @ignore */
 const log = (...args) => {
