@@ -21,7 +21,7 @@ export function configureStore(initialState?: ApplicationState): Store<Applicati
   sagaMiddleware
     .run(rootSaga)
     .toPromise()
-    .catch((e: ExceptionInformation) => console.error('Saga error', e))
+    .catch(e => console.error('Saga error', e))
 
   return store
 }

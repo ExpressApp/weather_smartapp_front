@@ -20,6 +20,7 @@ import {
 } from '../redux/actions/weatherApp'
 import TopLoader from './ui/top-loader/TopLoader'
 import MainLoader from './ui/main-loader/MainLoader'
+import packageJson from '../../package.json'
 
 export default function WeatherApp() {
   const [search, setSearch] = React.useState('')
@@ -34,6 +35,7 @@ export default function WeatherApp() {
 
   useEffect(() => {
     dispatch(loadInitialState())
+    console.log(`Weather App v${packageJson.version}`)
   }, [dispatch])
 
   useEffect(() => {
